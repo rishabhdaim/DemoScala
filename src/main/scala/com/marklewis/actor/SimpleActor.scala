@@ -27,4 +27,6 @@ object SimpleActorExample extends App {
   println("After Sending Messages")
   simpleActor ! 'r'
   println("After Sending Character")
+
+  system.terminate()
 }
