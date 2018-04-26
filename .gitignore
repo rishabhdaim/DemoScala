@@ -1,0 +1,8 @@
+*.class
+*.log
+*.iml
+.lib/
+target/
+project/boot/
+project/plugins/project/
+.idea/
