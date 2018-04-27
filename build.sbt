@@ -41,6 +41,7 @@ libraryDependencies ++= Seq(
   akkaOrg %% "akka-stream-testkit" % akkaVersion,
   akkaOrg %% "akka-testkit" % akkaVersion,
   akkaOrg %% "akka-http" % akkaHttpVersion,
-  akkaOrg %% "akka-http-testkit" % akkaHttpVersion
+  akkaOrg %% "akka-http-testkit" % akkaHttpVersion,
+  "org.scalafx" %% "scalafx" % "8.0.144-R12"
 )
     
