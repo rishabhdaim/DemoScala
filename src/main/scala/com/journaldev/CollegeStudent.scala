@@ -7,6 +7,9 @@ class CollegeStudent(override val m1:Int,override val m2:Int,val m3:Int,val m4:I
   var ma3:Int = m3
   var ma4:Int = m4
   var tot:Int = 0;
+
+  sId = "be01085059"
+
   def calculateTotal( ma1:Int, ma2:Int, ma3:Int, ma4:Int) {
     tot = ma1 + ma2 + ma3+ ma4
     println("Total is :"+tot)
@@ -22,5 +25,7 @@ object CollegeStudent {
 
     println("Running Singleton Class")
     SingletonTest.say()
+
+    total.studId
   }
 }

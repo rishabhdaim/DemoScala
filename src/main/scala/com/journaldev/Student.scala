@@ -9,6 +9,12 @@ class Student(val m1:Int,val m2:Int) {
   var ma1:Int = m1
   var ma2:Int = m2
 
+  protected var sId = "17"
+
+  def studId = {
+    println(s"Student is : $sId")
+  }
+
   def calculateTotal(ma1:Int,ma2:Int) {
     total = ma1 + ma2
     println("Total is :"+total)
@@ -22,5 +28,6 @@ object Student {
     val student = new Student(6, 8)
     student.calculateTotal(21, 23)
     println(student)
+    student.studId
   }
 }
