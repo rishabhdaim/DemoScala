@@ -54,7 +54,7 @@ object Optional extends App {
           case Some(gender) => println(s"Gender : ${gender}")
           case None => println("No Gender")
         }
-      case None => "?"
+      case None =>
     }
   }
 
