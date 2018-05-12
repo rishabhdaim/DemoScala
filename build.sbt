@@ -42,6 +42,7 @@ libraryDependencies ++= Seq(
   akkaOrg %% "akka-testkit" % akkaVersion,
   akkaOrg %% "akka-http" % akkaHttpVersion,
   akkaOrg %% "akka-http-testkit" % akkaHttpVersion,
-  "org.scalafx" %% "scalafx" % "8.0.144-R12"
+  "org.scalafx" %% "scalafx" % "8.0.144-R12",
+  "org.scala-lang.modules" % "scala-xml_2.12" % "1.1.0"
 )
     
