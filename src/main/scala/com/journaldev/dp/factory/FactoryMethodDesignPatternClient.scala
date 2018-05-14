@@ -1,6 +1,6 @@
 package com.journaldev.dp.factory
 
-import com.journaldev.dp.factory.caseclass.CaseComputerFactory
+import com.journaldev.dp.factory.cases.CaseComputerFactory
 
 /**
   * Created by diam on 5/14/2018.

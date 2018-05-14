@@ -1,4 +1,4 @@
-package com.journaldev.dp.factory.caseclass
+package com.journaldev.dp.factory.cases
 
 import com.journaldev.dp.factory.Computer
 
