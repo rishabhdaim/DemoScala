@@ -28,7 +28,6 @@ resolvers +=
   "maven-github-swagger" at "https://mvnrepository.com/artifact/com.github.swagger-akka-http/swagger-akka-http/"
 
 resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
-
 resolvers += Resolver.sonatypeRepo("releases")
 resolvers += Resolver.sonatypeRepo("snapshots")
 
@@ -43,6 +42,9 @@ libraryDependencies ++= Seq(
   akkaOrg %% "akka-http" % akkaHttpVersion,
   akkaOrg %% "akka-http-testkit" % akkaHttpVersion,
   "org.scalafx" %% "scalafx" % "8.0.144-R12",
-  "org.scala-lang.modules" % "scala-xml_2.12" % "1.1.0"
+  "org.scala-lang.modules" % "scala-xml_2.12" % "1.1.0",
+  "org.scalactic" %% "scalactic" % "3.0.5",
+  "org.scalatest" % "scalatest_2.12" % "3.0.5" % "test",
+  "org.mockito" % "mockito-all" % "1.10.19" % Test
 )
     
