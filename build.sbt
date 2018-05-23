@@ -45,6 +45,8 @@ libraryDependencies ++= Seq(
   "org.scala-lang.modules" % "scala-xml_2.12" % "1.1.0",
   "org.scalactic" %% "scalactic" % "3.0.5",
   "org.scalatest" % "scalatest_2.12" % "3.0.5" % "test",
-  "org.mockito" % "mockito-all" % "1.10.19" % Test
+  "org.mockito" % "mockito-all" % "1.10.19" % Test,
+  "org.scalamock" %% "scalamock-scalatest-support" % "3.6.0" % Test,
+  "org.scalamock" %% "scalamock" % "4.1.0" % Test
 )
     
