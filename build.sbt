@@ -31,6 +31,8 @@ resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/release
 resolvers += Resolver.sonatypeRepo("releases")
 resolvers += Resolver.sonatypeRepo("snapshots")
 
+resolvers += "Spray Repository" at "http://repo.spray.io"
+
 libraryDependencies ++= Seq(
   akkaOrg %% "akka-http-spray-json" % akkaHttpVersion,
   akkaOrg %% "akka-http-testkit" % akkaHttpVersion,
