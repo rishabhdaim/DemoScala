@@ -8,11 +8,11 @@ import scala.collection.mutable.ArrayBuffer
 class StandardQueue extends Queue {
   private val buf = new ArrayBuffer[Int]
   def get = {
-    println("Getting value")
+    println("Getting value Standard queue")
     buf.remove(0)
   }
   def put(x: Int) = {
-    println("Putting value")
+    println("Putting value Standard queue")
     buf += x
   }
 }
@@ -22,5 +22,6 @@ object StandardQueue extends App {
   val q2 = new StandardQueue with LoggingQueue with LockingQueue
 
   q1.put(2)
-  q1.get
+  println("-------------------------")
+  q2.put(4)
 }

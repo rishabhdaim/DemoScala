@@ -8,12 +8,12 @@ trait LoggingQueue extends Queue {
   private def log(message: String) = println(message)
 
   abstract override def get: Int = {
+    log("got: log")
     val x = super.get
-    log("got: " + x)
     x
   }
   abstract override def put(x: Int) {
+    log("put: log")
     super.put(x)
-    log("put: " + x)
   }
 }
