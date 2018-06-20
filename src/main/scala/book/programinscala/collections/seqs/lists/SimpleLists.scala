@@ -1,4 +1,4 @@
-package book.programinscala.collections.lists
+package book.programinscala.collections.seqs.lists
 
 /**
   * Created by diam on 6/18/2018.
