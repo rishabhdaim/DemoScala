@@ -18,7 +18,7 @@ class Maps {
       val oldCount = if (counts.contains(word)) counts(word) else 0
       counts(word) = oldCount + 1
     }
-    counts.++
+    counts
   }
 }
 

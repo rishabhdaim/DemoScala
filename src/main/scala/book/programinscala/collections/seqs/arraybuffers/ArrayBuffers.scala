@@ -16,7 +16,8 @@ object ArrayBuffers extends App {
   buffer.buf += 1 // add to the end
   buffer.buf += 2 // add to the end
   buffer.buf.+=:(3) // prepend 3 to buffer
-  4 +=: buffer.buf // prepend 4 to buffer, takes liner time
+  4 +=: buffer.buf // prepend 4 to buffer, takes linear time
+  buffer.buf.+=(5) // append the element
   println(buffer.buf)
 
   println("Conversions : ")
