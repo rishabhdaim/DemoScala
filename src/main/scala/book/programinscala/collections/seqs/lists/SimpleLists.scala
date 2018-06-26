@@ -6,8 +6,8 @@ package book.programinscala.collections.seqs.lists
 class SimpleLists {
 
   val fruits: List[String] = List("apple", "orange", "pears")
-  val nums: List[Int] = 1 :: (2 :: (3 :: (4 :: Nil)))
-  val diag3: List[List[Int]] = List(1, 0, 0) :: List(0, 1, 0) :: List(0, 0, 1) :: Nil
+  val numbers: List[Int] = 1 :: (2 :: (3 :: (4 :: Nil)))
+  val diagonal: List[List[Int]] = List(1, 0, 0) :: List(0, 1, 0) :: List(0, 0, 1) :: Nil
   val empty: List[Nothing] = List()
   val unsortedNums: List[Int] = List(2, 4, 1, 8, 3, 12, 1, 56, 4, 23, 45, 67)
 
@@ -61,14 +61,14 @@ object SimpleLists extends App {
   println(simpleLists.fruits.last)
 
   println("Numbers : ")
-  println(simpleLists.nums.tail.head)
-  println(simpleLists.nums.tail)
-  println(simpleLists.nums.isEmpty)
-  println(simpleLists.nums(2))
+  println(simpleLists.numbers.tail.head)
+  println(simpleLists.numbers.tail)
+  println(simpleLists.numbers.isEmpty)
+  println(simpleLists.numbers(2))
 
   println("Diag3 : ")
-  println(simpleLists.diag3.head)
-  println(simpleLists.diag3.tail)
+  println(simpleLists.diagonal.head)
+  println(simpleLists.diagonal.tail)
 
   println("Empty : ")
   println(simpleLists.empty.headOption.fold("Empty List") { e => e})
@@ -94,12 +94,12 @@ object SimpleLists extends App {
   println(rest)
 
   println("List Concatenate : ")
-  println(simpleLists.nums ::: simpleLists.unsortedNums ::: simpleLists.iSort(simpleLists.unsortedNums))
-  println((simpleLists.nums ::: simpleLists.unsortedNums ::: simpleLists.iSort(simpleLists.unsortedNums)).reverse)
+  println(simpleLists.numbers ::: simpleLists.unsortedNums ::: simpleLists.iSort(simpleLists.unsortedNums))
+  println((simpleLists.numbers ::: simpleLists.unsortedNums ::: simpleLists.iSort(simpleLists.unsortedNums)).reverse)
 
   println("Zip : ")
   println(simpleLists.fruits.indices zip simpleLists.fruits)
-  println(simpleLists.fruits zip simpleLists.nums)
+  println(simpleLists.fruits zip simpleLists.numbers)
   println(simpleLists.fruits.zipWithIndex.mkString("[", " -> ", "]"))
 
   println("Convert : ")
@@ -107,12 +107,12 @@ object SimpleLists extends App {
   println(simpleLists.unsortedNums.toArray.toList)
 
   println("Iterator : ")
-  val it = simpleLists.nums.iterator
+  val it = simpleLists.numbers.iterator
   println(it.next())
   println(it.next())
 
   println("------------ : Higher Order functions : ---------------")
-  println(simpleLists.nums.map(_ + 1))
+  println(simpleLists.numbers.map(_ + 1))
   println(simpleLists.fruits.map(_.length))
   println(simpleLists.fruits.map(_.toList.reverse.mkString("")))
 
@@ -128,7 +128,7 @@ object SimpleLists extends App {
   println(simpleLists.unsortedNums.takeWhile(_ < 50))
   println(simpleLists.unsortedNums.dropWhile(_ < 50))
   println(simpleLists.unsortedNums.span(_ < 50))
-  println(simpleLists.hasZeroRow(simpleLists.diag3))
+  println(simpleLists.hasZeroRow(simpleLists.diagonal))
   println(simpleLists.fruits.filter(_.length == 5))
   println(simpleLists.fruits.partition(_.length == 5))
   println(simpleLists.fruits.find(_.length == 5))
