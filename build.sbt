@@ -33,6 +33,8 @@ resolvers += Resolver.sonatypeRepo("snapshots")
 
 resolvers += "Spray Repository" at "http://repo.spray.io"
 
+fork := false
+
 libraryDependencies ++= Seq(
   akkaOrg %% "akka-http-spray-json" % akkaHttpVersion,
   akkaOrg %% "akka-http-testkit" % akkaHttpVersion,
