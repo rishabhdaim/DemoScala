@@ -5,10 +5,15 @@ package com.journaldev
   */
 object Loops extends App {
 
-  var sid:Int = 0
-  var marks:Int = 60
-  val marksList = List(60,65,70,75,80,85);
-  val idList = List(4,5,6,7,8,9,10,11,12);
+  val sid:Int = 0
+  val marks:Int = 60
+  val marksList = List(60,65,70,75,80,85)
+  val idList = List(4,5,6,7,8,9,10,11,12)
+
+  val nums = Seq(1,2,3)
+  val letters = Seq('a', 'b', 'c')
+  val names = Seq("chris", "ed", "maurice")
+
   //for loop with ranges
   for (sid <- 6 to 12) println(s"SID is: $sid")
 
@@ -27,4 +32,20 @@ object Loops extends App {
   // for loop with yield
   var result = for( id <- idList if  id < 9; if id !=7) yield id
   println(result)
+
+  // multiple generators
+  var res = for {
+    n <- nums
+    c <- letters
+  } yield (n, c)
+  println(res)
+
+  res = for (n <- nums; c <- letters) yield (n,c)
+  println(res)
+
+  var name = for (e <- names) yield e.capitalize
+  println(name)
+
+  name = names.map(_.capitalize)
+  println(name)
 }
