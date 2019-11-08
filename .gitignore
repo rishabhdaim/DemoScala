@@ -6,4 +6,5 @@ target/
 project/boot/
 project/plugins/project/
 project/target/
+project/target/streams/
 .idea/
