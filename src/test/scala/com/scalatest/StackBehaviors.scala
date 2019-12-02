@@ -1,11 +1,11 @@
 package com.scalatest
 
-import org.scalatest.FlatSpec
+import org.scalatest.flatspec.AnyFlatSpec
 
 /**
   * Created by diam on 5/23/2018.
   */
-trait StackBehaviors { this: FlatSpec =>
+trait StackBehaviors { this: AnyFlatSpec =>
 
   def nonEmptyStack(newStack: => Stack[Int], lastItemAdded: Int) {
 

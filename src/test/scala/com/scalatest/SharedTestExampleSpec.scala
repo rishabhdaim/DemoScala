@@ -1,11 +1,11 @@
 package com.scalatest
 
-import org.scalatest.FlatSpec
+import org.scalatest.flatspec.AnyFlatSpec
 
 /**
   * Created by diam on 5/23/2018.
   */
-class SharedTestExampleSpec extends FlatSpec with StackBehaviors {
+class SharedTestExampleSpec extends AnyFlatSpec with StackBehaviors {
 
   // Stack fixture creation methods
   def emptyStack = new Stack[Int]

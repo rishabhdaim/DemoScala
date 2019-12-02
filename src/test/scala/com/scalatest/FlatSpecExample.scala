@@ -1,13 +1,13 @@
 package com.scalatest
 
-import org.scalatest.FlatSpec
+import org.scalatest.flatspec.AnyFlatSpec
 
 import scala.collection.mutable.Stack
 
 /**
   * Created by diam on 5/22/2018.
   */
-class FlatSpecExample extends FlatSpec {
+class FlatSpecExample extends AnyFlatSpec {
 
   "A Stack" should "pop values in last-in-first-out order" in {
     val stack = new Stack[Int]

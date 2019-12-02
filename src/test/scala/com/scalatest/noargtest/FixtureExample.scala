@@ -2,12 +2,13 @@ package com.scalatest.noargtest
 
 import java.io.File
 
-import org.scalatest.{Failed, FlatSpec}
+import org.scalatest.Failed
+import org.scalatest.flatspec.AnyFlatSpec
 
 /**
   * Created by diam on 5/23/2018.
   */
-class FixtureExample extends FlatSpec {
+class FixtureExample extends AnyFlatSpec {
 
   override def withFixture(test: NoArgTest) = {
 

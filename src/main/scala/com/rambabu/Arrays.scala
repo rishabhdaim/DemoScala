@@ -9,13 +9,12 @@ object Arrays extends App {
   println(myIntArray)
 
   // lazy evaluation
-  val lazzy: Seq[(Int, Int)] = for ((index, value) <- myIntArray.view.zipWithIndex) yield (index, value)
+  val lazzy: scala.collection.View[(Int, Int)] = for ((index, value) <- myIntArray.view.zipWithIndex) yield (index, value)
   println(lazzy)
-  println(lazzy(4))
   println("-------------------")
   for ((index, value) <- myIntArray.view.zipWithIndex) println(value, index)
   println("-------------------")
   // eager evaluation
-  val eager: Seq[(Int, Int)] = for (i <- Range(0, myIntArray.length)) yield (i, myIntArray(i))
+  val eager: Seq[(Int, Int)] = for (i <- myIntArray.indices) yield (i, myIntArray(i))
   println(eager)
 }

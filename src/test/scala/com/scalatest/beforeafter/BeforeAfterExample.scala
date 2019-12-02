@@ -1,13 +1,14 @@
 package com.scalatest.beforeafter
 
-import org.scalatest.{BeforeAndAfter, FlatSpec}
+import org.scalatest.BeforeAndAfter
+import org.scalatest.flatspec.AnyFlatSpec
 
 import scala.collection.mutable.ListBuffer
 
 /**
   * Created by diam on 5/23/2018.
   */
-class BeforeAfterExample extends FlatSpec with BeforeAndAfter {
+class BeforeAfterExample extends AnyFlatSpec with BeforeAndAfter {
   val builder = new StringBuilder
   val buffer = new ListBuffer[String]
 

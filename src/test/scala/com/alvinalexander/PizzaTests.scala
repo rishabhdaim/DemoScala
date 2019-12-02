@@ -1,11 +1,12 @@
 package com.alvinalexander
 
-import org.scalatest.{BeforeAndAfter, FunSuite}
+import org.scalatest.BeforeAndAfter
+import org.scalatest.funsuite.AnyFunSuite
 
 /**
   * Created by diam on 5/22/2018.
   */
-class PizzaTests extends FunSuite with BeforeAndAfter {
+class PizzaTests extends AnyFunSuite with BeforeAndAfter {
 
   var pizza: Pizza = _
 

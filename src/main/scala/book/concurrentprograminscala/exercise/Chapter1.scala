@@ -1,5 +1,7 @@
 package book.concurrentprograminscala.exercise
 
+import book.concurrentprograminscala.Pair
+
 import scala.math._
 /**
   * Created by diam on 8/7/2018.

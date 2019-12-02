@@ -3,14 +3,16 @@ package book.effectiveakka.dp.extra
 import akka.actor.{ActorSystem, Props}
 import akka.testkit.{ImplicitSender, TestKit, TestProbe}
 import book.effectiveakka.common._
-import org.scalatest.{MustMatchers, WordSpecLike}
+import org.scalatest.matchers.must.Matchers;
+import org.scalatest.wordspec.AnyWordSpecLike
+import scala.language.postfixOps
 
 import scala.concurrent.duration._
 
 /**
   * Created by diam on 7/26/2018.
   */
-class ExtraFinalSpec extends TestKit(ActorSystem("ExtraTestAS")) with ImplicitSender with WordSpecLike with MustMatchers {
+class ExtraFinalSpec extends TestKit(ActorSystem("ExtraTestAS")) with ImplicitSender with AnyWordSpecLike with Matchers {
   "An AccountBalanceRetriever" should {
     "return a list of account balances" in {
       val probe1 = TestProbe()

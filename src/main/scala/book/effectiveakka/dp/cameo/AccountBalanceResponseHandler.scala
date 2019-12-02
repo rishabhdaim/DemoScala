@@ -3,6 +3,7 @@ package book.effectiveakka.dp.cameo
 import akka.actor.{Actor, ActorLogging, ActorRef, Cancellable, Props}
 import akka.event.LoggingReceive
 import book.effectiveakka.common._
+import scala.language.postfixOps
 
 import scala.concurrent.duration._
 

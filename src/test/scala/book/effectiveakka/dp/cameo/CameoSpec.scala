@@ -3,14 +3,16 @@ package book.effectiveakka.dp.cameo
 import akka.actor.{ActorSystem, Props}
 import akka.testkit.{ImplicitSender, TestKit, TestProbe}
 import book.effectiveakka.common._
-import org.scalatest.{MustMatchers, WordSpecLike}
+import scala.language.postfixOps
+import org.scalatest.matchers.must.Matchers;
+import org.scalatest.wordspec.AnyWordSpecLike
 
 import scala.concurrent.duration._
 
 /**
   * Created by diam on 7/26/2018.
   */
-class CameoSpec extends TestKit(ActorSystem("CameoTestAS")) with ImplicitSender with WordSpecLike with MustMatchers {
+class CameoSpec extends TestKit(ActorSystem("CameoTestAS")) with ImplicitSender with AnyWordSpecLike with Matchers {
   val checkingAccountsProxy = system.actorOf(Props[CheckingAccountsProxyStub], "checkings")
   val moneyMarketAccountsProxy = system.actorOf(Props[MoneyMarketAccountsProxyStub], "money-markets")
   "An AccountBalanceRetriever" should {

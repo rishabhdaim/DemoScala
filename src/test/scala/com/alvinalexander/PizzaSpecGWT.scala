@@ -1,11 +1,12 @@
 package com.alvinalexander
 
-import org.scalatest.{FunSpec, GivenWhenThen}
+import org.scalatest.GivenWhenThen
+import org.scalatest.funspec.AnyFunSpec
 
 /**
   * Created by diam on 5/22/2018.
   */
-class PizzaSpecGWT extends FunSpec with GivenWhenThen {
+class PizzaSpecGWT extends AnyFunSpec with GivenWhenThen {
 
   var pizza: Pizza = _
 

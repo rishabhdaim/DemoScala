@@ -1,5 +1,7 @@
 package com.marklewis
 
+import scala.collection.parallel.CollectionConverters._
+
 /**
   * Created by diam on 4/25/2018.
   */

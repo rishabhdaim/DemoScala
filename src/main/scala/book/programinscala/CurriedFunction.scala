@@ -10,9 +10,14 @@ object CurriedFunction extends App {
 
   def curriedSum(x: Int)(y: Int) = x + y
 
-  def first(x: Int) = (y: Int) => x + y
+  def first(x: Int) : Int => Int = (y: Int) => x + y
 
   def twice(op: Double => Double, x: Double) = op(op(x))
+  def triple(op: Double => Double, x: Double) = op(op(op(x)))
+
+  val partialSum = curriedSum(5) _
+
+  def complex: Int => Int = partialSum andThen first(10)
 
   println(plainOldSum(2, 4))
   val twoPlus = curriedSum(2)_
@@ -22,5 +27,7 @@ object CurriedFunction extends App {
   val second = first(2)
   println(second)
   println(second(4))
-  println(twice(_ + 2, 8))
+  println(twice(_ + 4, 8))
+  println(triple(_ + 4, 8))
+  println(complex(10))
 }

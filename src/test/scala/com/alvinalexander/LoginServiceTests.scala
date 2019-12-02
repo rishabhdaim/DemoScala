@@ -1,13 +1,13 @@
 package com.alvinalexander
 
-import org.scalatest.mockito.MockitoSugar
-import org.scalatest.{BeforeAndAfter, FunSuite}
-import org.mockito.Mockito._
+import org.mockito.MockitoSugar
+import org.scalatest.BeforeAndAfter
+import org.scalatest.funsuite.AnyFunSuite
 
 /**
   * Created by diam on 5/22/2018.
   */
-class LoginServiceTests extends FunSuite with BeforeAndAfter with MockitoSugar {
+class LoginServiceTests extends AnyFunSuite with BeforeAndAfter with MockitoSugar {
 
   test ("test login service") {
 

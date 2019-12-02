@@ -1,16 +1,16 @@
 package com.scalatest
 
 import java.io.{File, FileWriter}
+import java.util.UUID.randomUUID
 import java.util.concurrent.ConcurrentHashMap
 
 import com.scalatest.DbServer._
-import org.scalatest.FlatSpec
-import java.util.UUID.randomUUID
+import org.scalatest.flatspec.AnyFlatSpec
 
 /**
   * Created by diam on 5/23/2018.
   */
-class LoanFixtureExample extends FlatSpec {
+class LoanFixtureExample extends AnyFlatSpec {
 
   def withDatabase(testCode: Db => Any) {
     val dbName = randomUUID.toString

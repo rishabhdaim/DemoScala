@@ -2,6 +2,7 @@ package com.marklewis
 
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.collection.parallel.CollectionConverters._
 
 /**
   * Created by diam on 4/25/2018.

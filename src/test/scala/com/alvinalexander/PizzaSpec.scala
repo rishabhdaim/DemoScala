@@ -1,11 +1,12 @@
 package com.alvinalexander
 
-import org.scalatest.{BeforeAndAfter, FunSpec}
+import org.scalatest.BeforeAndAfter
+import org.scalatest.funspec.AnyFunSpec
 
 /**
   * Created by diam on 5/22/2018.
   */
-class PizzaSpec extends FunSpec with BeforeAndAfter {
+class PizzaSpec extends AnyFunSpec with BeforeAndAfter {
 
   var pizza: Pizza = _
 

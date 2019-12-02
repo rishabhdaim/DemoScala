@@ -1,14 +1,17 @@
 package com.scalatest.mock
 
+import org.scalamock.function.MockFunction1
 import org.scalamock.scalatest.MockFactory
-import org.scalatest.FlatSpec
+import org.scalatest.flatspec.AnyFlatSpec
+
+import scala.language.postfixOps
 
 /**
   * Created by diam on 5/23/2018.
   */
-class ScalaMock extends FlatSpec with MockFactory {
+class ScalaMock extends AnyFlatSpec with MockFactory {
 
-  val m = mockFunction[Int, String]
+  val m: MockFunction1[Int, String] = mockFunction[Int, String]
 
   m expects (42) returning "Forty Two" once
 

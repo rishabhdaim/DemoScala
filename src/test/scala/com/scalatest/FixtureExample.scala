@@ -1,13 +1,13 @@
 package com.scalatest
 
-import org.scalatest.FlatSpec
+import org.scalatest.flatspec.AnyFlatSpec
 
 import scala.collection.mutable.ListBuffer
 
 /**
   * Created by diam on 5/23/2018.
   */
-class FixtureExample extends FlatSpec {
+class FixtureExample extends AnyFlatSpec {
 
   def fixture = new {
     val builder = new StringBuilder("ScalaTest is ")
