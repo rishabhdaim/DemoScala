@@ -56,6 +56,7 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest-shouldmatchers" % "3.2.0-M1",
   "org.scalatest" %% "scalatest-funspec" % "3.2.0-M1",
   "org.scalatest" %% "scalatest-core" % "3.2.0-M1",
+  "org.typelevel" %% "cats-core" % "2.1.0-RC2",
   "org.scalatest" %% "scalatest" % "3.2.0-M1" % Test,
   "org.mockito" %% "mockito-scala" % "1.7.1" % Test,
   "org.scalamock" %% "scalamock" % "4.4.0" % Test
