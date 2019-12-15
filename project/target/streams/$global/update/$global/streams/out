@@ -10285,7 +10285,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.7!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 1755ms :: artifacts dl 35ms
+[debug] :: resolution report :: resolve 952ms :: artifacts dl 53ms
 [debug] 	report for default#demoscala-build;0.1-SNAPSHOT compile produced in /Users/diam/workspace/DemoScala/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-demoscala-build-compile.xml
 [debug] 	report for default#demoscala-build;0.1-SNAPSHOT runtime produced in /Users/diam/workspace/DemoScala/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-demoscala-build-runtime.xml
 [debug] 	report for default#demoscala-build;0.1-SNAPSHOT test produced in /Users/diam/workspace/DemoScala/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-demoscala-build-test.xml
@@ -10299,7 +10299,7 @@
 [debug] 	report for default#demoscala-build;0.1-SNAPSHOT docs produced in /Users/diam/workspace/DemoScala/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-demoscala-build-docs.xml
 [debug] 	report for default#demoscala-build;0.1-SNAPSHOT pom produced in /Users/diam/workspace/DemoScala/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-demoscala-build-pom.xml
 [debug] 	report for default#demoscala-build;0.1-SNAPSHOT scala-tool produced in /Users/diam/workspace/DemoScala/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-demoscala-build-scala-tool.xml
-[debug] 	resolve done (1755ms resolve - 35ms download)
+[debug] 	resolve done (952ms resolve - 53ms download)
 [info] Done updating.
 [warn] Found version conflict(s) in library dependencies; some are suspected to be binary incompatible:
 [warn] 
