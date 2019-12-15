@@ -19,6 +19,8 @@ object CurriedFunction extends App {
 
   def complex: Int => Int = partialSum andThen first(10)
 
+  def add(a: Int)(implicit b: Int): Int = a + b
+
   println(plainOldSum(2, 4))
   val twoPlus = curriedSum(2)_
   println(twoPlus)
@@ -30,4 +32,6 @@ object CurriedFunction extends App {
   println(twice(_ + 4, 8))
   println(triple(_ + 4, 8))
   println(complex(10))
+  implicit val v = 10
+  println(add(2))
 }
